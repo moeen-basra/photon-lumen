@@ -6,13 +6,13 @@ use Photon\Foundation\Job;
 
 class JsonResponseJob extends Job
 {
-    protected $status;
+    protected int $status;
 
-    protected $content;
+    protected array $content;
 
-    protected $headers;
+    protected array $headers;
 
-    protected $options;
+    protected mixed $options;
 
     public function __construct($content, $status = 200, array $headers = [], $options = 0)
     {
